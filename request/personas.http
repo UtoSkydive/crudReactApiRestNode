@@ -1,0 +1,29 @@
+@api = http://localhost:3000/personas
+
+GET {{api}}
+
+###
+POST {{api}}
+Content-Type: application/json
+
+{
+    "nombre" : "pepe",
+    "pais": "españa"
+}
+
+###
+PUT {{api}}/1
+Content-Type: application/json
+
+{
+    "nombre" : "pepe perez lopez",
+    "pais": "españa"
+}
+
+###
+GET {{api}}/1
+
+###
+DELETE {{api}}/6
+
+
